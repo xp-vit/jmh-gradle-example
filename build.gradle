@@ -9,8 +9,8 @@ allprojects {
     group = 'me.champeau.sample'
     version = '1.0-SNAPSHOT'
 
-    sourceCompatibility = 1.7
-    targetCompatibility = 1.7
+    sourceCompatibility = 1.8
+    targetCompatibility = 1.8
 
     repositories {
         jcenter()
@@ -21,7 +21,7 @@ allprojects {
 apply plugin: 'me.champeau.gradle.jmh'
 
 jmh {
-    include = 'org\\.openjdk\\.jmh\\.samples\\.JMHSample_01_HelloWorld.*'
+    include = 'org\\.openjdk\\.jmh\\.samples\\.JMHSample_32_Exceptions.*'
     humanOutputFile = null
     warmupIterations = 1
     iterations = 1
@@ -34,7 +34,7 @@ subprojects {
     apply plugin: 'me.champeau.gradle.jmh'
 
     jmh {
-        include = 'org\\.openjdk\\.jmh\\.samples\\.JMHSample_01_HelloWorld.*'
+        include = 'org\\.openjdk\\.jmh\\.samples\\.JMHSample_32_Exceptions.*'
         humanOutputFile = null
         warmupIterations = 1
         iterations = 1
